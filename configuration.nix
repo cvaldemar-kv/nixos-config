@@ -5,10 +5,10 @@
 { config, pkgs, ... }:
 
 {
-  imports =
-      ./hardware-configuration.nix
-      ./modules/desktop.nix
-    ];
+  imports = [
+    ./hardware-configuration.nix
+    ./modules/desktop.nix
+  ];
 
   # Bootloader.
   boot.loader.grub.enable = true;
